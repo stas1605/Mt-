@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="stylesheet" type="text/css" href="textt.css">
+
+<style>
+
+
+</style>
+
+<script type="text/javascript">
+  var total_pics_num = 4; // колличество изображений
+  var interval = 5000;    // задержка между изображениями
+  var time_out = 1;       // задержка смены изображений
+  var i = 0;
+  var timeout;
+  var opacity = 100;
+  function fade_to_next() {
+    opacity--;
+    var k = i + 1;
+    var image_now = 'image_' + i;
+    if (i == total_pics_num) k = 1;
+    var image_next = 'image_' + k;
+    document.getElementById(image_now).style.opacity = opacity/100;
+    document.getElementById(image_now).style.filter='alpha(opacity='+ opacity +')';
+    document.getElementById(image_next).style.opacity=(100-opacity)/100;
+    document.getElementById(image_next).style.filter ='alpha(opacity='+ (100-opacity) +')';
+    timeout = setTimeout("fade_to_next()",time_out);
+    if (opacity==1) {
+      opacity = 100;
+      clearTimeout(timeout);
+    }
+  }
+  setInterval (
+    function() {
+      i++;
+      if (i > total_pics_num) i=1;
+      fade_to_next();
+    }, interval
+  );
+</script>
+
+
+<title>Mtü</title>
+
+<meta charset="utf-8">
+
+
+	</head>
+	
+
+<body>
+	
+<div id="page">
+
+<div id="head">
+
+<div id="im"></div>
+
+<div id="im1">
+
+
+
+<div class="menuItem"> <a href="nejj.html">Главная </a></div>
+<div class="menuItem"> <a href="personal.html">О нас </a></div>
+<div class="menuItem"> <a href="price.html">Цены </a></div>
+
+<div class="dropdown">
+
+
+
+  <button class="dropbtn menuItem"> Обучение</button>
+  <div class="dropdown-content">
+    <a href="category-B-zim.html">Категория B</a>
+
+    <a href="category-С.html">С Категория</a>
+	<a href="category-СE.html">СE Категория</a>
+	<a href="category-D.html">D-категория</a>
+	<a href="category-T.html">Обучение на T-категорию</a>
+	<a href="code-95.html">Грузоперевозки (доп. обучение) VJ/TK код 95</a>
+	<a href="bus-transport.html">Автобусные перевозки (доп. обучение) BJ/TK</a>
+	<a href="140-hours.html">140-часовой курс ускоренной профессионального обучения водителей</a>
+  </div>
+</div>
+
+<div class="menuItem"> <a  href="contacts.html">Контакты </a></div>
+<div class="menuItem"> <a  href="#">Info@narvaautom.ee </a></div>
+
+
+</div>
+</div>
+
+<div id="znak">
+
+ <div class="zna"><img src="pngegg (3).png" width="70" height="70"></div>
+ <div class="zna"><img src="kisspng-traffic-sign-pedestrian-crossing-signage-traffic-c-5-19-1-5ba37eacb684b5.5336648215374414527476.png" width="70" height="70"></div>
+ <div class="zna"><img src="pngegg (2).png" width="70" height="70"></div>
+ <div class="zna"><img src="pngwing.com.png" width="70" height="70"></div>
+
+</div>
+
+
+<div id="bus-transport">
+
+<h1 class="TEXTtitle"> 140-часовой курс ускоренной профессионального обучения водителей</h1>
+
+
+
+<p id="TextCode95">
+
+
+Курс состоит из 74 ак. часа теории и 10 часов вождения, и 56 часов практики. Практику вы можете выбрать сами или её предоставляет автошкола.<br><br>
+
+Темы нашей учебной программы:
+<h4>
+<ol>
+ <li>Углубленное изучение правил времени работы и отдыха. Теория + практика.</li>
+ <li>Углубленное изучение тахографа (аналоговый и цифровой регистратор). </li>
+ <li>Углубленное изучение крепления грузов. </li>
+ <li>Защитное вождение и образ мышления. </li>
+ <li>Транспортное предпринимательство.</li>
+ <li>Общение – сотрудничество. </li>
+ <li>Ответственность, страхование. </li>
+ <li>Транспортный надзор. Полицейские проверки.</li>
+ <li>Безопасность водителя. Предотвращение преступлений. </li>
+ <li>Карты. Поиск местонахождения. </li>
+ <li>Безопасность труда водителей. </li>
+ <li>Характер работы водителя, режимы работы, регионы. Особенности работы в Северных странах.</li>
+ <li>Практические советы от опытного водителя.</li>
+
+ 
+</ol>
+
+</h4>
+
+
+Стоимость курса с вашей практикой 990 евро<br><br>
+
+тоимость курса с нашей практикой 1400 евро<br><br>
+
+
+
+
+
+
+Обучение заканчивается письменным экзаменом из 30 вопросов. О прохождении обучения выдается свидетельство, <br><br>
+с которым можно идти в АРК за получением нового профессионального удостоверения kutsetunnistus.<br><br>
+
+Преподаватели: Анатолий Старостин, Елена Микк<br><br>
+
+
+<h4>Цена для физического лица 120 евро<br><br></h4>
+
+<h4>Цена для предприятия 150 евро<br><br></h4>
+
+</p>
+
+
+
+
+<div id="footer">
+
+<h1 id="textFooter">Есть вопрос? Спроси сейчас!</h1>
+
+
+<div id="colonka">
+
+<h2>MTÜ Narva Autom</h2>
+<p> Vabaduse 3, Narva 20303 </p>
+<p> Тел. +3723594655, +37258249111 </p>
+<p> Е-мейл: info@narvaautom.ee </p>
+<p> р/счет: EE831010220281402226 SEB </p>
+
+<a href="https://www.facebook.com/narvaautom/"><img src="fb_icon_325x325.png" width="50" height="50" alt="" class="round"></a>
+<a href="https://www.instagram.com/accounts/login/?next=/narva_autom/"><img src="640px-Instagram-Icon.png" width="50" height="50" alt="" class="round"></a>
+
+<div>
+
+
+
+<div id="colonka2">
+
+<p>Сообшение<Br>
+   <textarea name="comment" cols="60" rows="10"></textarea></p>
+  <p><input type="submit" value="Отправить">
+   <input type="reset" value="Очистить"></p>
+ </form>
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
